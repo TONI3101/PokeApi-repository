@@ -33,18 +33,18 @@ const drawPokemon = (pokes) =>{
     for (const poke of pokes) {
         let div$$ = document.createElement("div");
         div$$.className = "carta"
-        div$$.innerHTML= `<h4>${poke.name}</h4>
+        div$$.innerHTML= `<h4> ${poke.name}</h4><p>${poke.id}</p>
         <img class="img_poke" src="${poke.sprites.other.home.front_default}" alt="">
-        <p>${poke.types.map(type => type.type.name)}</p>
-        <p>weight:${poke.weight}</p>
-        <p>height:${poke.height} </p>`
+        <p> ${poke.types.map(type => type.type.name)}</p>
+        <p>weight: ${poke.weight / 10}</p>
+        <p>height: ${poke.height /10} </p>`
         gallery$$.appendChild(div$$);
     }
 
 }
-const searchPoke = (name, pokes) => {
-
-    const filteredPokes = pokes.filter((poke) => poke.name.toLowerCase().includes(name.toLowerCase()));
+const searchPoke = (nombre, pokes) => {
+    
+    const filteredPokes = pokes.filter((poke) => poke.name.toLowerCase().includes(nombre.toLowerCase())|| poke.id == nombre );
     drawPokemon(filteredPokes);
     
 
