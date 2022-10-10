@@ -1,1 +1,89 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(44, 44, 44);
+  align-items: center;
+}
+body .title {
+  align-items: center;
+}
+body .main_gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+body .main_gallery-container .carta {
+  width: 300px;
+  border: 3px solid rgb(45, 106, 180);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10%;
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-right-width: 6px;
+  border-left-width: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .img_poke {
+  width: 35%;
+}
+
+.head-btn {
+  background-color: rgb(255, 204, 1);
+  width: 25%;
+  color: rgb(45, 106, 180);
+  border: 2px solid rgb(45, 106, 180);
+  border-radius: 10%;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+footer div img {
+  width: 45%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(255, 204, 1);
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 204, 1);
+}/*# sourceMappingURL=style.css.map */
